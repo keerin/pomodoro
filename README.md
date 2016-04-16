@@ -12,7 +12,7 @@ to
 
 The terminal bell doesn't work on my machine for unknown reasons, and it doesn''t annoy me enough to spend half the day messing about trying to get it to work. If you want the timer to use mpg123 if it exists, or print "\a" if it does not then feel free to respond to an issue and pull.
 
-### Useage
+### Usage
 
     $ pomodoro -t 20
 

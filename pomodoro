@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+# You need to install mpg123 for this to work, sorry.
+
+require 'optparse'
+
+options = {}
+
+option_parser = OptionParser.new do |opts|
+  opts.on("-t TIME") do |time|
+    options[:time] = time.to_i
+  end
+end
+
+option_parser.parse!
+#puts options.inspect
+
+done = Time.now + options[:time] * 60
+while Time.now < done
+  count = done - Time.now
+  puts "#{count.round(0)} seconds remaining"
+  sleep 1
+end
+`mpg123 -q ~/Documents/projects/pomodoro/beep.mp3`
+puts "Take a break!"

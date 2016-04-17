@@ -13,19 +13,19 @@ Simply type 'pomodoro' into the command line, and you'll be given a 20 minute ti
 
     $ pomodoro
 
-Will run the countdown timer for 20 minutes, counting down in seconds, and will emit a system beep when finished.
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
 
     $ pomodoro -t 15
 
-Will run the timer in the terminal for 15 minutes, counting down in seconds, and will emit a system beep when finished.
+Will run the timer in the terminal for 15 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
 
     $ pomodoro -m -t 1
 
-Will run the timer in the terminal for 1 minutes, counting down in seconds, and will use mpg123 to play beep.mp3
+Will run the timer in the terminal for 1 minutes, counting down in minutes and seconds, and will use mpg123 to play beep.mp3
 
     $ pomodoro --mpg
     
-Will run the countdown timer for 20 minutes, counting down in seconds, and will emit a system beep when finished.
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
 
     $ pomodoro -h
 

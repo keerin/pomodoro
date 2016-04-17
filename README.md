@@ -14,7 +14,11 @@ The terminal bell doesn't work on my machine for unknown reasons, and it doesn''
 
 ### Usage
 
-    $ pomodoro -t 20
+    $ pomodoro
+
+Will run the countdown timer for 20 minutes by default.
+
+    $ pomodoro -t 15
 
 Will run the timer in the terminal for 20 minute, counting down in seconds.
 
@@ -26,7 +30,7 @@ That's it so far.
 
 ### To Do
 
-1. Add help flags and documentation
+1. ~Add help flags and documentation~
 2. Use terminal bell if user does not have mpg123 installed
 3. Allow the user to also enter a time containing seconds (5.5 = 5 min 30 secs)
 4. Allow the user to display countdown in seconds or minutes and seconds

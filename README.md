@@ -5,32 +5,35 @@ This is most likely a perpetual work in progress, so apologies if you have to ju
 
 I use Ruby 2.2.1, but as far as I know, everything here works with every version of Ruby.
 
-You will have to install mpg123 to make the beep work at the end. If you find it does not work, just change:
-    `mpg123 -q ~/Documents/projects/pomodoro/beep.mp3`
-to
-    print "\a"
-
-The terminal bell doesn't work on my machine for unknown reasons, and it doesn''t annoy me enough to spend half the day messing about trying to get it to work. If you want the timer to use mpg123 if it exists, or print "\a" if it does not then feel free to respond to an issue and pull.
+The terminal bell doesn't work on my machine for unknown reasons, and it doesn't annoy me enough to spend half the day messing about trying to get it to work. This is the only reason for the -m switch. Using terminal bell is the defaut because my I imagine problem is an edge case.
 
 ### Usage
 
+Simply type 'pomodoro' into the command line, and you'll be given a 20 minute timer. Hit CTRL+C to terminate.
+
     $ pomodoro
 
-Will run the countdown timer for 20 minutes by default.
+Will run the countdown timer for 20 minutes, counting down in seconds, and will emit a system beep when finished.
 
     $ pomodoro -t 15
 
-Will run the timer in the terminal for 20 minute, counting down in seconds.
+Will run the timer in the terminal for 15 minutes, counting down in seconds, and will emit a system beep when finished.
 
-    $ pomodoro -t 1
+    $ pomodoro -m -t 1
 
-Will run the timer in the terminal for 1 minutes, counting down in seconds.
+Will run the timer in the terminal for 1 minutes, counting down in seconds, and will use mpg123 to play beep.mp3
 
-That's it so far.
+    $ pomodoro --mpg
+    
+Will run the countdown timer for 20 minutes, counting down in seconds, and will emit a system beep when finished.
+
+    $ pomodoro -h
+
+Will show the help text for each command.
 
 ### To Do
 
-1. ~Add help flags and documentation~
-2. Use terminal bell if user does not have mpg123 installed
+~1. ~Add help flags and documentation~
+~2. Use terminal bell if user does not have mpg123 installed~
 3. Allow the user to also enter a time containing seconds (5.5 = 5 min 30 secs)
 4. Allow the user to display countdown in seconds or minutes and seconds

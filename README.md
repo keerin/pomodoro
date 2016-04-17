@@ -30,10 +30,3 @@ Will run the countdown timer for 20 minutes, counting down in seconds, and will 
     $ pomodoro -h
 
 Will show the help text for each command.
-
-### To Do
-
-~1. ~Add help flags and documentation~
-~2. Use terminal bell if user does not have mpg123 installed~
-3. Allow the user to also enter a time containing seconds (5.5 = 5 min 30 secs)
-4. Allow the user to display countdown in seconds or minutes and seconds

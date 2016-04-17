@@ -5,7 +5,7 @@ This is most likely a perpetual work in progress, so apologies if you have to ju
 
 I use Ruby 2.2.1, but as far as I know, everything here works with every version of Ruby.
 
-The terminal bell doesn't work on my machine for unknown reasons, and it doesn't annoy me enough to spend half the day messing about trying to get it to work. This is the only reason for the -m switch. Using terminal bell is the defaut because my I imagine problem is an edge case.
+The terminal bell doesn't work on my machine for unknown reasons, and it doesn't annoy me enough to spend half the day messing about trying to get it to work. This is the only reason for the -m switch. Using terminal bell is the defaut because I imagine my problem is an edge case.
 
 ### Usage
 

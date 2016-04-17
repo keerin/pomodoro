@@ -4,7 +4,9 @@
 
 require 'optparse'
 
-options = {}
+options = {
+  :time => 20
+  }
 
 option_parser = OptionParser.new do |opts|
   opts.on("-t TIME","Enter a time in minutes. Ex. $ pomodoro -t 10 - will give you a ten minute timer") do |time|

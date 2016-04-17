@@ -9,7 +9,7 @@ options = {
   }
 
 option_parser = OptionParser.new do |opts|
-  opts.on("-t TIME","Enter a time in minutes. Ex. $ pomodoro -t 10 - will give you a ten minute timer") do |time|
+  opts.on("-t TIME","Enter a time in minutes. Default is 20 minutes.") do |time|
     options[:time] = time.to_i
   end
 end

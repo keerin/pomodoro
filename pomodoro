@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-# You need to install mpg123 for this to work, sorry.
-
 require 'optparse'
 
 options = {
@@ -9,23 +7,22 @@ options = {
   }
 
 option_parser = OptionParser.new do |opts|
-  
-  opts.on("-t TIME","Enter a time in minutes. Default is 20 minutes.") do |time|
+  opts.on("-t <time>","Enter a time in minutes. Default is 20 minutes.") do |time|
     options[:time] = time.to_i
   end
-  
+
   opts.on("-m","--mpg", "When this switch is set, the system will try to use mpg123 instead of the system beep.") do
     options[:mpg] = true
   end
-  
 end
 
 option_parser.parse!
 
 done = Time.now + options[:time] * 60
+
 while Time.now < done
-  count = done - Time.now
-  puts "#{count.round(0)} seconds remaining"
+  count = done - Time.now.to_i
+  puts "#{count.strftime('%M:%S')} remaining"
   sleep 1
 end
 

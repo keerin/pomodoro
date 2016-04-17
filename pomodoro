@@ -9,9 +9,15 @@ options = {
   }
 
 option_parser = OptionParser.new do |opts|
+  
   opts.on("-t TIME","Enter a time in minutes. Default is 20 minutes.") do |time|
     options[:time] = time.to_i
   end
+  
+  opts.on("-m","--mpg", "When this switch is set, the system will try to use mpg123 instead of the system beep.") do
+    options[:mpg] = true
+  end
+  
 end
 
 option_parser.parse!
@@ -22,5 +28,11 @@ while Time.now < done
   puts "#{count.round(0)} seconds remaining"
   sleep 1
 end
-`mpg123 -q ~/Documents/projects/pomodoro/beep.mp3`
+
+if options[:mpg] == true
+  `mpg123 -q ~/Documents/projects/pomodoro/beep.mp3`
+else
+  print "\a"
+end
+
 puts "Take a break!"

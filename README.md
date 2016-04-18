@@ -21,11 +21,11 @@ Will run the timer in the terminal for 15 minutes, counting down in minutes and 
 
     $ pomodoro -m -t 1
 
-Will run the timer in the terminal for 1 minutes, counting down in minutes and seconds, and will use mpg123 to play beep.mp3
+Will run the timer in the terminal for 1 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep.mp3 when finished.
 
     $ pomodoro --mpg
     
-Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep.mp3 when finished.
 
     $ pomodoro -h
 

@@ -1,0 +1,37 @@
+Pomodoro -- A very simple command-line countdown timer
+
+## DESCRIPTION
+
+**Pomodoro** is a command-line countdown timer. While the default is 20 minuntes, you can count down from any time you choose, and even change the sound you hear when your time is up!
+
+## EXAMPLES
+
+Simply type 'pomodoro' into the command line, and you'll be given a 20 minute timer. Hit CTRL+C to terminate.
+
+    $ pomodoro
+
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
+
+    $ pomodoro -t 15
+
+Will run the timer in the terminal for 15 minutes, counting down in minutes and seconds, and will emit a system beep when finished.
+
+    $ pomodoro -m -t 1
+
+Will run the timer in the terminal for 1 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep.mp3
+
+    $ pomodoro --mpg
+
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep.mp3
+
+    $ pomodoro -h
+
+Will show the help text for each command.
+
+## AUTHOR
+
+Kieran McNairn - thekieran@gmail.com
+
+## CONTRIBUTE
+
+Head over to GitHub (https://github.com/keerin/pomodoro), fork and contribute!

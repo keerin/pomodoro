@@ -1,0 +1,87 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "POMODORO" "1" "April 2016" "" ""
+.
+.SH "NAME"
+\fBpomodoro\fR
+.
+.P
+Pomodoro \-\- A very simple command\-line countdown timer
+.
+.SH "DESCRIPTION"
+\fBPomodoro\fR is a command\-line countdown timer\. While the default is 20 minuntes, you can count down from any time you choose, and even change the sound you hear when your time is up!
+.
+.SH "EXAMPLES"
+Simply type \'pomodoro\' into the command line, and you\'ll be given a 20 minute timer\. Hit CTRL+C to terminate\.
+.
+.IP "" 4
+.
+.nf
+
+$ pomodoro
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will emit a system beep when finished\.
+.
+.IP "" 4
+.
+.nf
+
+$ pomodoro \-t 15
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Will run the timer in the terminal for 15 minutes, counting down in minutes and seconds, and will emit a system beep when finished\.
+.
+.IP "" 4
+.
+.nf
+
+$ pomodoro \-m \-t 1
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Will run the timer in the terminal for 1 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep\.mp3
+.
+.IP "" 4
+.
+.nf
+
+$ pomodoro \-\-mpg
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Will run the countdown timer for 20 minutes, counting down in minutes and seconds, and will try to use mpg123 to play beep\.mp3
+.
+.IP "" 4
+.
+.nf
+
+$ pomodoro \-h
+.
+.fi
+.
+.IP "" 0
+.
+.P
+Will show the help text for each command\.
+.
+.SH "AUTHOR"
+Kieran McNairn \- thekieran@gmail\.com
+.
+.SH "CONTRIBUTE"
+Head over to GitHub (https://github\.com/keerin/pomodoro), fork and contribute!

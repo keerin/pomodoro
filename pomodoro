@@ -7,6 +7,7 @@ options = {
   }
 
 option_parser = OptionParser.new do |opts|
+
   opts.on("-t <time>","Enter a time in minutes. Default is 20 minutes.") do |time|
     options[:time] = time.to_i
   end
